@@ -1,0 +1,184 @@
+<html>
+<head>
+    <title>Bootstrap Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="basic.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="Burlington.png" />
+    <style>
+        .d-flex, .form-control me-2 {
+            width: 600px;
+            margin-left: 10px;
+        }
+
+        .card {
+            position: relative;
+            top: 50px;
+            display: inline-grid;
+            height: fit-content;
+            height: 569px;
+            margin-bottom: 15px;
+        }
+
+        .Contact form {
+            width: 20%;
+            border: 3px solid black;
+            box-sizing: initial;
+            border-radius: 4px;
+            margin-left: 100px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-bottom: 80px;
+        }
+
+        .Contact {
+            padding-top: 40px;
+        }
+
+        #I1 {
+            padding-left: 25px;
+            padding-bottom: 30px;
+        }
+
+        #but {
+            background: #F7DC6F;
+            margin-left: 25px;
+            padding-left: 38px;
+            padding-right: 38px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-top: 20px;
+        }
+
+        .form-control {
+            width: 64%;
+        }
+
+        #Address {
+            text-align: center;
+            margin-left: 85px;
+            margin-top: -400px;
+        }
+
+        #map {
+            margin-left: 1050px;
+            margin-top: -385px;
+            width: 35%;
+        }
+
+            #map p {
+                margin-left: 200px;
+                font-size: 20px;
+            }
+
+                #map p:hover {
+                    color: blue;
+                }
+
+        #Address h:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="Top">
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="LOGO.png" alt="" width="200" height="60">
+
+                </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <img src="cart.jpg" class="rounded float-end" alt="..." width="50" height="60">
+            </div>
+        </nav>
+        <nav id="Navigation">
+
+            <ul id="menu">
+                <li>
+                    <a href="Home.html"style="text-decoration:none"> Home </a>
+                </li>
+                <li>
+                    <a href="AboutUs.html"style="text-decoration:none">About Us</a>
+                </li>
+
+                <li>
+                    <a href="LoginPage.html"style="text-decoration:none">Login</a>
+                </li>
+                <li>
+                    <a href="Registration.html"style="text-decoration:none">Registration</a>
+                </li>
+                <li>
+                    <a href="ContactUs.html"style="text-decoration:none">Contact Us</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <section id="banner">
+        <h3>Discover Amazing Deals</h3>
+    </section>
+    <div id="logo1">
+        <p>
+            <img src=Burlington.png height="30" width="30" />
+            burlington.in
+        </p>
+    </div>
+    <div class="Contact">
+        <form>
+            <div id="I1">
+                <h4><b>Contact Us</b></h4>
+            </div>
+            <p><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name*"></p>
+            <p>
+                
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </p>
+            <p><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number*"></p>
+            <p><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Message Here*"></p>
+
+            <p><input type="checkbox" id="c2"> I am not robot   <i class="fa fa-android" aria-hidden="true"></i></p>
+
+            <input type="submit" id="but" value="Submit" />
+        </form>
+    </div>
+    <section id="Address">
+        <h ><b><u><i class="fa fa-location-arrow" aria-hidden="true"></i> Ofice Address</u></b></h>
+        <p>
+            
+            Burlington<br />
+            #140/2,LABURNUM PARKT, Magarpatta Road,<br />
+            Pune-411028,Maharashtra India<br />
+            +91 020-66241804, +910982 333 7798<br />
+            <br /><br /><br />
+            <h ><b><u><i class="fa fa-envelope" aria-hidden="true"></i> E-Mail</u></b></h><br />
+            General enquiries: enquiry@burlington.com<br />
+            careers: careers@burlington.com
+
+        </p>
+    </section>
+    <section id="map">
+        <p>  <i class="fa fa-map-marker" aria-hidden="true"></i><b> google map</b> </p> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.6238140872483!2d73.928866!3d18.51770865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c18c6b16776b%3A0x95200a55b6a5aa5b!2sLABURNUM%20PARK%2C%20Towards%20John%20Deere%20Inner%20Cir%2C%20Magarpatta%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra%20411028!5e0!3m2!1sen!2sin!4v1653198271612!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+    <footer class="footer">
+        <p>
+            &copy;copy right to e-comm website. Powered by  <img src=Burlington.png height="20" width="20" /> Burlington. Year 2022
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+</body>
+</html>

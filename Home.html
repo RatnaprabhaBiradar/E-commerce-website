@@ -1,0 +1,322 @@
+<html>
+<head>
+    <title>Bootstrap Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="basic.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="Burlington.png" />
+    <style>
+        .d-flex, .form-control me-2 {
+            width: 600px;
+            margin-left: 10px;
+        }
+
+        .card {
+            position: relative;
+            top: 50px;
+            display: inline-grid;
+            height: fit-content;
+            height: 569px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Top">
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="LOGO.png" alt="" width="200" height="60">
+
+                </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <img src="cart.jpg" class="rounded float-end" alt="..." width="50" height="60">
+            </div>
+        </nav>
+
+
+
+        <nav id="Navigation">
+
+            <ul id="menu">
+                <li>
+                    <a href="Home.html" style="text-decoration:none"> Home </a>
+                </li>
+                <li>
+                    <a href="AboutUs.html" style="text-decoration:none">About Us</a>
+                </li>
+
+                <li>
+                    <a href="LoginPage.html"style="text-decoration:none">Login</a>
+                </li>
+                <li>
+                    <a href="Registration.html"style="text-decoration:none">Registration</a>
+                </li>
+                <li>
+                    <a href="ContactUs.html"style="text-decoration:none">Contact Us</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <section id="MCarousel">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Banner2.png" class="d-block w-100" alt="..." height="300">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="Ban5.jpg" class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="Ban3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Ban4.jpg" class="d-block w-100" alt="..." height="300">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="Ban.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Ban7.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-2">
+                <div class="left-pannel">
+                    <ul>
+                        <li><b>Home Decor</b></li>
+                        <li><b>Electronics</b></li>
+                        <li><b>Fashion</b></li>
+                        <li><b>Watches</b></li>
+                        <li><b>Furniture</b></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="HD2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Buddha Idol</h5>
+                                <p class="card-text">Global Grabbers Polyresin Sitting Buddha Idol Statue Showpiece for Home Decor Diwali Decoration and Gifting, Orange and Black, 24CM, 1Piece</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="HD1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Artvibes Wall Hanger</h5>
+                                <p class="card-text">Artvibes Wall Hanger MDF Wooden for Home Decor|Office|Gift (WH_3208N, Set of 6) (Multicolour, Religious)</p>
+                                <br /> <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem; ">
+                            <img src="HD3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wall Shelves</h5>
+                                <p class="card-text">FABULO Floating Wall Shelf Rafuf Wooden Intersecting Wall Shelves ( Set of 8 ) (Red & Black)</p>
+                                <br />
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="MB2.jpg" class="card-img-top" alt="..."height="400">
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung Galaxy M12</h5>
+                                <p class="card-text">Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) </p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="MB1.jpg" class="card-img-top" alt="..."><br />
+                            <div class="card-body">
+                                <h5 class="card-title">OnePlus Nord CE 2 5G </h5>
+                                <p class="card-text">OnePlus Nord CE 2 5G (Bahamas Blue, 8GB RAM, 128GB Storage)</p>
+                                <br />
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="TV1.jpg" class="card-img-top" alt="..."><br /><br /><br /> <br />
+                            <div class="card-body">
+                                <h5 class="card-title">LG Ultra HD Smart OLED TV</h5>
+                                <p class="card-text">LG 164 cm (65 inches) 4K Ultra HD Smart OLED TV 65GXPTA (Dark Steel Silver) (2020 Model)</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="GF1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Traditions Bazaar</h5>
+                                <p class="card-text">Traditions Bazaar Women's Velvet Gota Patti Dupatta (1Pc Dupatta Only, 30 Inches x 2.25 MTRS)</p><br />
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="GF2.jpg" class="card-img-top" alt="..."height="400">
+                            <div class="card-body">
+                                <h5 class="card-title">PERFECTBLUE</h5>
+                                <p class="card-text">PERFECTBLUE Women's Crape Printed Kurti(Kurti-9_Variation)e</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="M3cloth.jpg" class="card-img-top" alt="..." height="370">
+                            <div class="card-body">
+                                <h5 class="card-title">Ethluxis</h5>
+                                <p class="card-text">
+                                    Ethluxis Men's Silk Blend Kurta Churidar Pyjama with Multi-Colour Embroidered Bundi Nehru Jacket Waistcoat
+                                </p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="W1.jpg" class="card-img-top" alt="..."><br />
+                            <div class="card-body">
+                                <h5 class="card-title">Fastrack</h5>
+                                <p class="card-text">Fastrack Analog Black Dial Unisex-Adult Watch-38024PP25</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="W2.jpg" class="card-img-top" alt="..."height="350"><br />
+                            <div class="card-body">
+                                <h5 class="card-title">TIMEX</h5>
+                                <p class="card-text">TIMEX Analog Men's Watch</p><br />
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="W3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Apple</h5>
+                                <p class="card-text">Apple Watch Series 7 (GPS + Cellular, 45mm) - Starlight Aluminium Case with Starlight Sport Band - Regular</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="FR1.jpg" class="card-img-top" alt="..."height="380">
+                            <div class="card-body">
+                                <h5 class="card-title">Santosha Decor</h5>
+                                <p class="card-text">Santosha Decor Sheesham fabric 7 Seater Sofa Set with Cushions (Walnut Brown)</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="FR2.jpg" class="card-img-top" alt="..."height="380">
+                            <div class="card-body">
+                                <h5 class="card-title">Wardrobe</h5>
+                                <p class="card-text">Maison & Cuisine without Pocket, 6+2 Fancy Layer Collapsible Wardrobe Portable Foldable for Clothes  </p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-mg-4 col-sm-12 col-xs-12">
+                        <div class="card" style="width: 22rem;">
+                            <img src="FR3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wing Chair</h5>
+                                <p class="card-text">Woodnesia High Back Wing Chair with Ottoman in Fabric (Yellow)</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+   
+    <footer class="footer">
+        <p>
+            &copy;copy right to e-comm website. Powered by  <img src=Burlington.png height="20" width="20"/> Burlington. Year 2022
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+</body>
+</html>

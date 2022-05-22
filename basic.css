@@ -1,0 +1,105 @@
+
+#Navigation {
+    /*position: sticky !important ;
+    top:20px;*/
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+    
+}
+#Top{
+    position:sticky;
+    top:0px;
+    z-index:2;
+}
+
+#menu ul li a {
+    text-decoration: none;
+}
+
+#menu li {
+    display: inline-flex;
+}
+    #menu li a {
+        top: 50px;
+        margin-right:20px;
+    }
+
+#menu {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+    
+}
+    
+
+
+    #menu li a:hover {
+        color: blue;
+        font-size: 20px;
+        
+        /*padding: 5px;*/
+    }
+
+.left-pannel ul li {
+    list-style: none;
+    position: relative;
+    top: 50px;
+    padding-top: 38px;
+    
+    font-size:20px;
+    font-display:block;
+    margin-left:30px;
+}
+li:hover{
+    color:blue;
+    font-size:20px;
+}
+.left-pannel {
+    position: relative;
+    background: white;
+    height: 437px;
+    overflow-y: auto;
+}
+
+.footer {
+   
+    height: 50px;
+    background: #3f404a;
+    bottom:0px;
+    margin-top:360px;
+}
+
+    .footer p {
+        text-align:center;
+        padding-top:8px;
+        color: white;
+        left: 448px;
+    }
+#banner {
+    position: relative;
+    top: 2px;
+    background-image: url('Banner1.jpg');
+    height: 300px;
+    width: 100%;
+    background-position: bottom;
+    padding-top: -2em;
+}
+    #banner h3 {
+        text-align: center;
+        color: #F5BB15;
+        padding-left: 180px;
+    }
+#logo1 {
+    font-family:Brush Script MT;
+    padding-top:30px;
+    font-style: oblique;
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+}
+    #logo1:hover {
+        color: blue;
+        font-size: 20px
+    }
