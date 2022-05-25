@@ -42,13 +42,7 @@
             margin-left: 90px;
         }
 
-        #pwd {
-            margin-left: 108px;
-        }
-
-        #pwd1 {
-            margin-left: 40px;
-        }
+        
 
         #num {
             margin-left: 60px;
@@ -56,7 +50,7 @@
 
         #but {
             background: #F7DC6F;
-            margin-left: 150px;
+            margin-left: 120px;
             padding-left: 80px;
             padding-right: 100px;
             padding-top: 5px;
@@ -73,7 +67,7 @@
         }
 
         #I1 {
-            padding-left: 160px;
+            padding-left: 120px;
             padding-bottom: 30px;
         }
     </style>
@@ -97,20 +91,20 @@
 
             <ul id="menu">
                 <li>
-                    <a href="Home.html"style="text-decoration:none"> Home </a>
+                    <a href="Home.html" style="text-decoration:none"> Home </a>
                 </li>
                 <li>
-                    <a href="AboutUs.html"style="text-decoration:none">About Us</a>
+                    <a href="AboutUs.html" style="text-decoration:none">About Us</a>
                 </li>
 
                 <li>
-                    <a href="LoginPage.html"style="text-decoration:none">Login</a>
+                    <a href="LoginPage.html" style="text-decoration:none">Login</a>
                 </li>
                 <li>
-                    <a href="Registration.html"style="text-decoration:none">Registration</a>
+                    <a href="Registration.html" style="text-decoration:none">Registration</a>
                 </li>
                 <li>
-                    <a href="ContactUs.html"style="text-decoration:none">Contact Us</a>
+                    <a href="ContactUs.html" style="text-decoration:none">Contact Us</a>
                 </li>
             </ul>
 
@@ -124,31 +118,57 @@
             <img src=Burlington.png height="30" width="30" />
             burlington.in
         </p>
-</div>
-    
+    </div>
+
     <div class="Regist">
 
-        <form>
+        <form action="LoginPage.html">
             <div id="I1">
                 <h4><b>Create Account</b></h4>
             </div>
+            <p>
+                <label for="Input1" class="form-label">Full Name</label>
+                <input type="text" required class="form-control" id="Input1" placeholder="your name">
+
+
+            </p>
+            <p>
+
+                <label for="Input2" class="form-label">Email address</label>
+                <input type="email" required class="form-control" id="Input2" placeholder="name@example.com">
+
+            </p>
+
+            <p>
+                <label for="Input3" class="form-label">Password</label>
+                <input type="password" required class="form-control" id="Input3" placeholder="password">
+
+            </p>
+            <p>
+                <label for="Input4" class="form-label">Confirm  Password</label>
+                <input type="password" required class="form-control" id="Input4" placeholder="re write the password">
+
+            </p>
+            <p> <small id="error" style="color:red;"></small></p>
+
+            <p>
+                <input type="submit" id="but" value="Sign UP" onclick="return ValidatePassword()" />
+                <input type="button" value="Clear Data" onclick="Clear()" />
+               </p>
             
-            <p><b>User Name </b><input type="text" id="Name" required /></p>
-            <p><b>Enter Email </b><input type="email" id="Email" value="abcd@email" required /></p>
-            <p><b>Password</b><input type="password" id="pwd" required /></p>
-            <p><b>Confirm Password</b> <input type="password" id="pwd1" required /></p>
-            <p><b>Mobile Number</b><input type="text" id="num" /></p><br /><br />
-            <input type="submit" id="but"value="Sign UP" />
-            <div id="term">
-                <p>
-                    By creating an account or logging in, you agree to<br />Burlington's Conditions of Use and Privacy Policy.
-                    <br />                               
-                </p>
-                <div id="bot">
-                    <p>Already have an account? <a href="Loginpage.html">Sign in</a> </p>
+                
+            
+
+                <div id="term">
+                    <p>
+                        By creating an account or logging in, you agree to<br />Burlington's Conditions of Use and Privacy Policy.
+                        <br />
+                    </p>
+                    <div id="bot">
+                        <p>Already have an account? <a href="Loginpage.html">Sign in</a> </p>
+                    </div>
                 </div>
-            </div>
-        </form>
+</form>
 
     </div>
 
@@ -157,6 +177,27 @@
             &copy;copy right to e-comm website. Powered by  <img src=Burlington.png height="20" width="20" /> Burlington. Year 2022
         </p>
     </footer>
+    <script>
+        function Clear() {
+            localStorage.clear();
+            // to clear perticular item use localStorage.remove("Key");
+            //Local storage store data parmentiley but to store data for that session only use session storage(localStorage/sessionStorage)
+        }
+        function ValidatePassword() {
+            if (document.getElementById("Input3").value == document.getElementById("Input4").value) {
+                document.getElementById("error").innerHTML = "";
+                localStorage.setItem("emailid", document.getElementById("Input2").value);
+                localStorage.setItem("password", document.getElementById("Input3").value);
+                localStorage.setItem("Username", document.getElementById("Input1").value);
+                return true;
+            }
+            else {
+                document.getElementById("error").innerHTML = "Password Does Not Match";
+                return false;
+            }
+        }
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

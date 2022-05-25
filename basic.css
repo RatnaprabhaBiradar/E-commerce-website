@@ -103,3 +103,7 @@ li:hover{
         color: blue;
         font-size: 20px
     }
+
+.form-control{
+    width:80%;
+}

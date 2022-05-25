@@ -124,16 +124,23 @@
     </div>
     <div class="Regist">
 
-        <form>
+        <form action="test.html">
             <div id="I1">
                 <h4><b>Sign In</b></h4>
             </div>
 
-            <p><b>User Name </b><input type="text" id="Name" required /></p>
+            <p>
+                <label for="Input2" class="form-label">Email address</label>
+                <input type="email" required class="form-control" id="Input2" placeholder="name@example.com">
 
-            <p><b>Password</b><input type="password" id="pwd" required /></p><br />
+            </p>
 
-            <input type="submit" id="but1" value="Sign In" />
+            <p>
+                <label for="Input3" class="form-label">Password</label>
+                <input type="password" required class="form-control" id="Input3" placeholder="password">
+            </p><br />
+
+            <input type="submit" id="but1" value="Sign In" onclick="return validateUser()"/>
             <div id="term">
                 <p>
                     By creating an account or logging in, you agree to<br />Burlington's Conditions of Use and Privacy Policy.
@@ -157,6 +164,25 @@
             &copy;copy right to e-comm website. Powered by  <img src=Burlington.png height="20" width="20" /> Burlington. Year 2022
         </p>
     </footer>
+    <script>
+        function validateUser() {
+            // save email & pass which is entered in textboxes by the user
+            var emailId = document.getElementById("Input2").value;
+            var password = document.getElementById("Input3").value;
+            // get the email & pass from the localstorage
+            var email = localStorage.getItem("emailid");
+            var pass = localStorage.getItem("password");
+            if (emailId == email && password == pass) {
+                alert("Success !");
+                return true;
+            }
+            else {
+                alert("Fail to login");
+                return false;
+            }
+        }
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
